@@ -9,8 +9,6 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _reactNative = require("react-native");
-
 var _pack = require("../@pack");
 
 var _actheme = _interopRequireWildcard(require("actheme"));
