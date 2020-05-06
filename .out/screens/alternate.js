@@ -9,7 +9,9 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _bet = require("bet");
+var _reactNative = require("react-native");
+
+var _pack = require("../@pack");
 
 var _actheme = _interopRequireWildcard(require("actheme"));
 
@@ -20,10 +22,9 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function MainScreen(props) {
-  return /*#__PURE__*/_react["default"].createElement(Styled.Wrap, null, /*#__PURE__*/_react["default"].createElement(Styled.Text, null, "React Native for Web & Next.js"), /*#__PURE__*/_react["default"].createElement(_bet.Elems.Link, {
-    href: "/alternate"
-  }, "Go to Alternate Screen"), /*#__PURE__*/_react["default"].createElement(Styled.Cont, null, /*#__PURE__*/_react["default"].createElement(Styled.Text, {
-    className: "WTF",
+  return /*#__PURE__*/_react["default"].createElement(Styled.Wrap, null, /*#__PURE__*/_react["default"].createElement(Styled.Text, null, "React Native for Web & Next.js"), /*#__PURE__*/_react["default"].createElement(Styled.Link, {
+    href: "/"
+  }, "Go back to Main Screen"), /*#__PURE__*/_react["default"].createElement(Styled.Cont, null, /*#__PURE__*/_react["default"].createElement(Styled.Text, {
     "aria-level": "2"
   }, "Subheader")));
 }
@@ -34,5 +35,46 @@ exports["default"] = _default;
 var Styled = _actheme["default"].create({
   Wrap: 'ai,jc:c fg:1',
   Cont: 'mt:s4',
-  Text: 'fs,mb:s6 fs:24'
-});
+  Text: 'fs,mb:s6 fs:24',
+  Link: [_pack.Elems.Link, 'c:pink fb:normal fs:s5']
+}); // function AlternateScreen(props) {
+//   return (
+//     <View style={styles.container}>
+//       <Text accessibilityRole="header" style={styles.text}>
+//         React Native for Web & Next.js Alt
+//       </Text>
+//
+//       <Elems.Link style={styles.link} href="/">
+//         Back to Main Screen
+//       </Elems.Link>
+//
+//       <View style={styles.textContainer}>
+//         <Text accessibilityRole="header" aria-level="2" style={styles.text}>
+//           Subheader
+//         </Text>
+//       </View>
+//     </View>
+//   )
+// }
+//
+// export default AlternateScreen
+//
+// const styles = StyleSheet.create({
+//   container: {
+//     alignItems: 'center',
+//     flexGrow: 1,
+//     justifyContent: 'center',
+//   },
+//   link: {
+//     color: 'blue',
+//   },
+//   textContainer: {
+//     alignItems: 'center',
+//     marginTop: 16,
+//   },
+//   text: {
+//     alignItems: 'center',
+//     fontSize: 24,
+//     marginBottom: 24,
+//   },
+// })

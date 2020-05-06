@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { Elems } from 'bet'
+import { Elems } from '../@pack'
 import Actheme, { style } from 'actheme'
 
 function MainScreen(props) {

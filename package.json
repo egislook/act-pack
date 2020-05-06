@@ -2,9 +2,9 @@
   "name": "act-pack",
   "version": "0.0.0",
   "description": "",
-  "main": "@pack/index.js",
+  "main": ".out/@pack/index.js",
   "scripts": {
-    "start": "babel --watch src/ --out-dir ./",
+    "start": "babel --watch src/ --out-dir ./.out",
     "format": "prettier --tab-width 2 --jsx-bracket-same-line true --single-quote --print-width 100 true --semi false --write \"src/**/*.js\""
   },
   "devDependencies": {
