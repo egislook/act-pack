@@ -1,5 +1,5 @@
 {
-  "name": "@act/pack",
+  "name": "act-pack",
   "version": "0.0.0",
   "description": "",
   "main": ".out/@pack/index.js",
